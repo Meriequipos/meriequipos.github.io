@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #002b5c; /* azul oscuro Meriequipos */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4b2b; /* rojo Meriequipos */
+}
+
+/* Main content */
+main {
+  padding: 40px 30px;
+}
+
+.bienvenida {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bienvenida h2 {
+  font-size: 2rem;
+  color: #002b5c;
+  margin-bottom: 10px;
+}
+
+.herramientas h3 {
+  font-size: 1.5rem;
+  color: #002b5c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cards */
+.tarjetas-herramientas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #002b5c;
+}
+
+.tarjeta p {
+  margin-bottom: 15px;
+}
+
+.tarjeta a {
+  background-color: #ff4b2b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tarjeta a:hover {
+  background-color: #d63a1f;
+}
+
+.inactivo {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.proximamente {
+  background-color: #ffbb00;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #002b5c;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #ffbb00;
+  text-decoration: underline;
+}
