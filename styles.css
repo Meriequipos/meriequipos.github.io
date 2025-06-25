@@ -1,20 +1,39 @@
-/* General Reset */
+/* ==== FUENTES PERSONALIZADAS ==== */
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('Fonts/GOTHIC.TTF') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('Fonts/GOTHICB.TTF') format('truetype');
+  font-weight: bold;
+}
+
+/* ==== RESET GENERAL ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   background-color: #f5f7fa;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header */
+/* ==== HEADER ==== */
 header {
-  background-color: #002b5c; /* azul oscuro Meriequipos */
+  background-color: #0F277B; /* Azul Meriequipos */
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -44,16 +63,17 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ff4b2b; /* rojo Meriequipos */
+  color: #ff4b2b;
 }
 
-/* Main content */
+/* ==== CONTENIDO PRINCIPAL ==== */
 main {
+  flex: 1;
   padding: 40px 30px;
 }
 
@@ -65,18 +85,18 @@ main {
 
 .bienvenida h2 {
   font-size: 2rem;
-  color: #002b5c;
+  color: #0F277B;
   margin-bottom: 10px;
 }
 
 .herramientas h3 {
   font-size: 1.5rem;
-  color: #002b5c;
+  color: #0F277B;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Cards */
+/* ==== TARJETAS DE HERRAMIENTAS ==== */
 .tarjetas-herramientas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -102,7 +122,7 @@ main {
 .tarjeta h4 {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #002b5c;
+  color: #0F277B;
 }
 
 .tarjeta p {
@@ -136,25 +156,13 @@ main {
   font-size: 0.9rem;
 }
 
-/* Asegura que el footer se empuje hasta abajo */
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-/* Footer */
+/* ==== FOOTER ==== */
 footer {
   text-align: center;
   padding: 30px;
-  background-color: #002b5c;
+  background-color: #0F277B;
   color: white;
   font-size: 0.9rem;
-  margin-top: 60px;
 }
 
 footer a {
