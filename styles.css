@@ -136,6 +136,17 @@ main {
   font-size: 0.9rem;
 }
 
+/* Asegura que el footer se empuje hasta abajo */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 /* Footer */
 footer {
   text-align: center;
