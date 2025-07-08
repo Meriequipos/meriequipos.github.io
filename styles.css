@@ -156,6 +156,102 @@ main {
   font-size: 0.9rem;
 }
 
+/* ==== FORMATO ALTAS ==== */
+form, .table-container {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+textarea {
+  resize: vertical;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+.row > div {
+  flex: 1;
+}
+.image-preview {
+  max-width: 100px;
+  margin-top: 10px;
+  border: 1px dashed #999;
+  padding: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+/* Estilo para que el texto de la tabla sea mayúsculas */
+table tbody td {
+  text-transform: uppercase;
+}
+.actions button {
+  margin-right: 5px;
+}
+.limit-msg {
+  color: red;
+  font-size: 0.9em;
+}
+.char-counter {
+  font-size: 0.9em;
+  text-align: right;
+}
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #ff4b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #d63a1f;
+}
+#imagenDrop {
+  border: 2px dashed #bbb;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+}
+.instruction-text { /* Estilo para el nuevo texto */
+    font-size: 0.9em;
+    color: #555;
+    margin-top: -10px; /* Ajusta el margen superior para acercarlo al título */
+    margin-bottom: 15px; /* Espacio debajo del texto */
+}
+
+/* ==== CONVERSOR 100 x 100 ==== */
+#canvas {
+      border: 1px solid #000;
+    }
+
 /* ==== FOOTER ==== */
 footer {
   text-align: center;
